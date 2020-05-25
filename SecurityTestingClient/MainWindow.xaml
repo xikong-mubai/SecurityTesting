@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Label Content="防伪码：" FontSize="20" HorizontalAlignment="Left" Margin="99,231,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.169,-0.007" Width="81"/>
+        <TextBox Name="SecurityCode" FontSize="20" HorizontalAlignment="Left" Height="35" Margin="206,231,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="361"/>
+        <Button Content="检测" FontSize="20" HorizontalAlignment="Left" Margin="325,317,0,0" VerticalAlignment="Top" Width="75" Height="37" Click="Button_Click"/>
+        <TextBlock Name="Result" FontSize="18" HorizontalAlignment="Left" Margin="180,73,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="99" Width="387"/>
+
+
     </Grid>
 </Window>

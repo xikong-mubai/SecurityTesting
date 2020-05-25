@@ -12,9 +12,9 @@ namespace SecurityTestingServer
     [ServiceContract]
     public interface IService1
     {
-
+        //对接收到的防伪码进行检测
         [OperationContract]
-        string GetData(int value);
+        StringBuilder Detection(string SecurityCode);
 
         [OperationContract]
         CompositeType GetDataUsingDataContract(CompositeType composite);

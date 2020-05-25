@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurityTestingClient", "SecurityTestingClient.csproj", "{E115F3E5-6902-4C12-A05F-68DD80CA619D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{50BC9D95-B85F-47CA-8304-6F73683C3E6E} = {50BC9D95-B85F-47CA-8304-6F73683C3E6E}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurityTestingServer", "..\SecurityTestingServer\SecurityTestingServer.csproj", "{50BC9D95-B85F-47CA-8304-6F73683C3E6E}"
 EndProject
