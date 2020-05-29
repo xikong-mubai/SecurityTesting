@@ -13,7 +13,7 @@ namespace SecurityTestingServer
     public class Service1 : IService1
     {
         //选取密钥,类型自己选择
-       private string key;
+       private string key = "1234567887654321";
         public StringBuilder Detection(string SecurityCode)
         {
             //创建一个StringBuilder对象
@@ -48,7 +48,7 @@ namespace SecurityTestingServer
         //带密钥的杂凑函数算法实现
         public string MAC(string key,string number)
         {
-            return "编号的杂凑值";
+            return Hash_IDEA.IDEA_Crypto(number, key);
         }
 
         public CompositeType GetDataUsingDataContract(CompositeType composite)
